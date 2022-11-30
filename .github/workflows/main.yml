@@ -44,7 +44,7 @@ jobs:
       - name: docker build
         run: |
           cp ./build/libs/*.war ./Dockerfile
-          docker build -t blue049 /was:v${{ env.RELEASE_VERSION }} ./Dockerfile
+          docker build -t blue049 /was:v1 ./Dockerfile
           docker build -t blue049 /was:latest ./Dockerfile
       - name: docker images check
         run: docker images
